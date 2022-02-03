@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Menu from "./menu";
 
 interface NavbarProps {
@@ -29,6 +29,9 @@ const Navbar = (props: NavbarProps) => {
       ? setState({ ...state, isOpen: false })
       : setState({ ...state, isOpen: true });
 
+  const closeDrawer = () => {
+    setState({ ...state, isOpen: false });
+  };
   const bgOnScroll = () => {
     window.scrollY >= 80
       ? setState({ ...state, isScrolled: true })
@@ -40,9 +43,9 @@ const Navbar = (props: NavbarProps) => {
       bgOnScroll();
     };
     window.onresize = () => {
-      setState({ ...state, isOpen: false });
+      closeDrawer();
     };
-  }, []);
+  }, [bgOnScroll, closeDrawer]);
 
   return (
     <>

@@ -26,7 +26,7 @@ interface SlideContentProps {
 
 const SlideContent = (props: SlideContentProps) => {
   if (props.type === "image") {
-    return <Image src={props.src} />;
+    return <Image src={props.src} alt="image" />;
   } else if (props.type === "video") {
     return (
       <Box position={"relative"} paddingBottom={"56.25%"}>

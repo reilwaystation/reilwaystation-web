@@ -46,6 +46,7 @@ const ProjectItem = (props: ProjectItemProps) => {
           height={"auto"}
           src={props.thumbnail}
           fallbackSrc="https://via.placeholder.com/150"
+          alt="thumbnail"
         />
         <Text
           noOfLines={2}

@@ -27,9 +27,13 @@ const ProjectList = (props: ProjectListProps) => {
       alignItems={"stretch"}
     >
       {props.dataset.length !== 0 &&
-        props.dataset.map((item) => {
+        props.dataset.map((item, index) => {
           return (
-            <Box flex={{ base: "0 0 50%", md: "0 0 25%" }} padding={"1rem"}>
+            <Box
+              flex={{ base: "0 0 50%", md: "0 0 25%" }}
+              padding={"1rem"}
+              key={index}
+            >
               <ProjectItem
                 thumbnail={item.thumbnail}
                 media={item.media}

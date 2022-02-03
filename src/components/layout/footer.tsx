@@ -21,10 +21,10 @@ const Footer = () => {
             Howdy?
           </Text>
           <Text>
-            Feel Free to discus whatever your business needs whether it's about
-            making your UI/UX dynamic and animated or even if you're in need of
-            Visual Effects or maybe you want to start a game development
-            business.
+            Feel Free to discus whatever your business needs whether it&aposs
+            about making your UI/UX dynamic and animated or even if you&aposre
+            in need of Visual Effects or maybe you want to start a game
+            development business.
           </Text>
         </Box>
         <Box

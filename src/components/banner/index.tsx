@@ -36,14 +36,14 @@ const Banner = () => {
             </Text>
             <br />
             <Text color={"white"} fontWeight={"light"} fontSize={"sm"}>
-              I'm FCN a designer and a junior programmer behind
+              I&aposm FCN a designer and a junior programmer behind
               reilwaystation.com. My friends called by the my gamer name Reil so
-              that's the story behind my website name. I design graphic
+              that&aposs the story behind my website name. I design graphic
               materials such as logos, brands, infographics, simple vfx and many
               more. I have a few years starting experience as a programmer I
-              develop website and in my past time I'm scripting and automating
-              some technical analysis strategy. Some years ago I used to be a
-              freelance event photographer my specialty is portraits.
+              develop website and in my past time I&aposm scripting and
+              automating some technical analysis strategy. Some years ago I used
+              to be a freelance event photographer my specialty is portraits.
             </Text>
             <br />
             <Text color={"white"}></Text>

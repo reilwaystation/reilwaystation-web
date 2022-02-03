@@ -25,34 +25,84 @@ const Expertise = () => {
           breakpoints={{ 768: { slidesPerView: 6, spaceBetween: 100 } }}
         >
           <SwiperSlide>
-            <Image width={"auto"} height={"2rem"} src="/adobe.svg" />
+            <Image
+              width={"auto"}
+              alt={"skill"}
+              height={"2rem"}
+              src="/adobe.svg"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Image width={"auto"} height={"2rem"} src="/blender.svg" />
+            <Image
+              width={"auto"}
+              alt={"skill"}
+              height={"2rem"}
+              src="/blender.svg"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Image width={"auto"} height={"2rem"} src="/django.svg" />
+            <Image
+              width={"auto"}
+              alt={"skill"}
+              height={"2rem"}
+              src="/django.svg"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Image width={"auto"} height={"2rem"} src="/nextjs.svg" />
+            <Image
+              width={"auto"}
+              alt={"skill"}
+              height={"2rem"}
+              src="/nextjs.svg"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Image width={"auto"} height={"2rem"} src="/nestjs.svg" />
+            <Image
+              width={"auto"}
+              alt={"skill"}
+              height={"2rem"}
+              src="/nestjs.svg"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Image width={"auto"} height={"2rem"} src="/node.svg" />
+            <Image
+              width={"auto"}
+              alt={"skill"}
+              height={"2rem"}
+              src="/node.svg"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Image width={"auto"} height={"2rem"} src="/pine.svg" />
+            <Image
+              width={"auto"}
+              alt={"skill"}
+              height={"2rem"}
+              src="/pine.svg"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Image width={"auto"} height={"2rem"} src="/python.svg" />
+            <Image
+              width={"auto"}
+              alt={"skill"}
+              height={"2rem"}
+              src="/python.svg"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Image width={"auto"} height={"2rem"} src="/react.svg" />
+            <Image
+              width={"auto"}
+              alt={"skill"}
+              height={"2rem"}
+              src="/react.svg"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Image width={"auto"} height={"2rem"} src="/typescript.svg" />
+            <Image
+              width={"auto"}
+              alt={"skill"}
+              height={"2rem"}
+              src="/typescript.svg"
+            />
           </SwiperSlide>
         </Swiper>
       </Container>
