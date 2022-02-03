@@ -11,7 +11,8 @@ const Banner = () => {
       width={"100%"}
       backgroundColor={"#1a202c"}
       display={"flex"}
-      alignItems={"center"}
+      alignItems={"flex-end"}
+      minHeight={{ base: "100vh", md: "auto" }}
     >
       <Container
         maxW={"container.lg"}
@@ -34,16 +35,14 @@ const Banner = () => {
             >
               WELCOME VISITOR
             </Text>
+            <Text color={"white"} fontWeight={"light"} fontSize={"sm"}>
+              to our design station
+            </Text>
             <br />
             <Text color={"white"} fontWeight={"light"} fontSize={"sm"}>
-              I&aposm FCN a designer and a junior programmer behind
-              reilwaystation.com. My friends called by the my gamer name Reil so
-              that&aposs the story behind my website name. I design graphic
-              materials such as logos, brands, infographics, simple vfx and many
-              more. I have a few years starting experience as a programmer I
-              develop website and in my past time I&aposm scripting and
-              automating some technical analysis strategy. Some years ago I used
-              to be a freelance event photographer my specialty is portraits.
+              I'm FCN a designer and a programmer behind this website. What we
+              do in reilwaystation is Graphic Design, Programming and Scripting
+              Technical Analysis Strategies.
             </Text>
             <br />
             <Text color={"white"}></Text>

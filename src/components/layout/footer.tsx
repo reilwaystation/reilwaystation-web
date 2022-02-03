@@ -20,7 +20,7 @@ const Footer = () => {
           <Text marginBottom={"1rem"} fontWeight={"bold"}>
             Howdy?
           </Text>
-          <Text>
+          <Text fontWeight={"light"} fontSize={"sm"}>
             Feel Free to discus whatever your business needs whether it&aposs
             about making your UI/UX dynamic and animated or even if you&aposre
             in need of Visual Effects or maybe you want to start a game
@@ -49,7 +49,9 @@ const Footer = () => {
               >
                 <FontAwesomeIcon icon={faEnvelope} />
               </Box>
-              <Text>villangcafcneal@gmail.com</Text>
+              <Text fontWeight={"light"} fontSize={"sm"}>
+                villangcafcneal@gmail.com
+              </Text>
             </Box>
             <Box as={"li"} display={"flex"} marginBottom={".5rem"}>
               <Box
@@ -60,7 +62,9 @@ const Footer = () => {
               >
                 <FontAwesomeIcon icon={faEnvelope} />
               </Box>
-              <Text>reilwaystation@gmail.com</Text>
+              <Text fontWeight={"light"} fontSize={"sm"}>
+                reilwaystation@gmail.com
+              </Text>
             </Box>
             <Box as={"li"} display={"flex"} marginBottom={".5rem"}>
               <Box
@@ -71,7 +75,9 @@ const Footer = () => {
               >
                 <FontAwesomeIcon icon={faPhone} />
               </Box>
-              <Text>+639482629914</Text>
+              <Text fontWeight={"light"} fontSize={"sm"}>
+                +639482629914
+              </Text>
             </Box>
           </Box>
         </Box>
@@ -83,9 +89,15 @@ const Footer = () => {
             <Text marginBottom={"1rem"} fontWeight={"bold"}>
               External
             </Text>
-            <Text marginBottom={".5rem"}>codeygo</Text>
-            <Text marginBottom={".5rem"}>github</Text>
-            <Text marginBottom={".5rem"}>linkedin</Text>
+            <Text fontWeight={"light"} fontSize={"sm"} marginBottom={".5rem"}>
+              codeygo
+            </Text>
+            <Text fontWeight={"light"} fontSize={"sm"} marginBottom={".5rem"}>
+              github
+            </Text>
+            <Text fontWeight={"light"} fontSize={"sm"} marginBottom={".5rem"}>
+              linkedin
+            </Text>
           </Box>
         </Box>
       </Container>

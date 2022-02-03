@@ -1,4 +1,4 @@
-import { Box, Container, Image } from "@chakra-ui/react";
+import { Box, Container, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
@@ -15,13 +15,31 @@ const Expertise = () => {
         paddingTop={"2rem"}
         paddingBottom={"2rem"}
       >
+        <Text
+          fontWeight={"bold"}
+          color={"white"}
+          marginBottom={"3rem"}
+          textTransform={"uppercase"}
+          position={"relative"}
+          _after={{
+            display: "block",
+            content: `""`,
+            width: "100%",
+            height: ".30rem",
+            backgroundColor: "#04bcf4",
+            position: "absolute",
+            bottom: "-1rem",
+            left: 0,
+          }}
+        >
+          Our Tools and Expertise
+        </Text>
         <Swiper
           modules={[Autoplay]}
           spaceBetween={20}
           slidesPerView={5}
           autoplay={{ delay: 1, disableOnInteraction: false }}
-          speed={1000}
-          loop
+          speed={2000}
           breakpoints={{ 768: { slidesPerView: 6, spaceBetween: 100 } }}
         >
           <SwiperSlide>

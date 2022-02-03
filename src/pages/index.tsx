@@ -12,6 +12,26 @@ const Home = () => {
       <Banner />
       <Expertise />
       <Container maxW={"container.lg"} marginBottom={"2rem"}>
+        <Text
+          display={"inline-block"}
+          fontWeight={"bold"}
+          color={"white"}
+          marginBottom={"3rem"}
+          textTransform={"uppercase"}
+          position={"relative"}
+          _after={{
+            display: "block",
+            content: `""`,
+            width: "100%",
+            height: ".30rem",
+            backgroundColor: "#04bcf4",
+            position: "absolute",
+            bottom: "-1rem",
+            left: 0,
+          }}
+        >
+          Checkout Our Art Gallery
+        </Text>
         <ProjectList dataset={post} />
       </Container>
     </Layout>

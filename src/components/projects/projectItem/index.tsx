@@ -41,6 +41,7 @@ const ProjectItem = (props: ProjectItemProps) => {
       >
         <Image
           marginBottom={"1rem"}
+          borderRadius={".5rem"}
           boxSize={"200px"}
           width={"100%"}
           height={"auto"}
@@ -53,7 +54,7 @@ const ProjectItem = (props: ProjectItemProps) => {
           marginBottom={"1rem"}
           color={"white"}
           fontWeight={"light"}
-          fontSize="sm"
+          fontSize={"sm"}
         >
           {props.description ? props.description : "No Description"}
         </Text>

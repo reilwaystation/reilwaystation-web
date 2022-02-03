@@ -11,7 +11,7 @@ const Layout = (props: any) => {
         display={"flex"}
         flexDirection={"column"}
         minHeight={"100vh"}
-        backgroundColor={"#272822"}
+        backgroundColor={"#1e1f1c"}
       >
         <Box>{props.children}</Box>
         <Footer />
