@@ -23,7 +23,7 @@ const ProjectList = (props: ProjectListProps) => {
     <Box
       display={"flex"}
       flexWrap={"wrap"}
-      margin={"-1rem"}
+      margin={"-.5rem"}
       alignItems={"stretch"}
     >
       {props.dataset.length !== 0 &&
@@ -31,7 +31,7 @@ const ProjectList = (props: ProjectListProps) => {
           return (
             <Box
               flex={{ base: "0 0 50%", md: "0 0 25%" }}
-              padding={"1rem"}
+              padding={".5rem"}
               key={index}
             >
               <ProjectItem

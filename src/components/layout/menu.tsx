@@ -8,7 +8,7 @@ const MenuButton = (props: any) => (
     size={"sm"}
     marginRight=".5rem"
     width={{ base: "100%", md: "auto" }}
-    fontWeight="regular"
+    fontWeight="medium"
     justifyContent="flex-start"
     backgroundColor={"transparent"}
     _focus={{ boxShadow: "none" }}

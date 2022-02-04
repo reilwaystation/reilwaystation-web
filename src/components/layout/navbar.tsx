@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Menu from "./menu";
 
 interface NavbarProps {
@@ -20,8 +20,8 @@ interface NavbarProps {
 const Navbar = (props: NavbarProps) => {
   const isDesktop = useBreakpointValue({ md: true });
   const [state, setState] = useState<any>({
-    isScrolled: false,
     isOpen: false,
+    scrollY: 0,
   });
 
   const toggleDrawer = () =>
@@ -32,34 +32,37 @@ const Navbar = (props: NavbarProps) => {
   const closeDrawer = () => {
     setState({ ...state, isOpen: false });
   };
-  const bgOnScroll = () => {
-    window.scrollY >= 80
-      ? setState({ ...state, isScrolled: true })
-      : setState({ ...state, isScrolled: false });
+
+  const calculateOpacity = () => {
+    let scrollY = window.scrollY * 0.0025;
+
+    if (scrollY >= 1) {
+      setState({ ...state, scrollY: 1 });
+    } else if (scrollY < 1) {
+      setState({ ...state, scrollY });
+    } else return;
   };
 
   useEffect(() => {
     window.onscroll = () => {
-      bgOnScroll();
+      calculateOpacity();
     };
     window.onresize = () => {
       closeDrawer();
     };
-  }, [bgOnScroll, closeDrawer]);
+  }, [closeDrawer, calculateOpacity]);
 
   return (
     <>
       <Box
-        backgroundColor={
-          props.scrollable ? (state.isScrolled ? "#04bcf4" : "") : "#04bcf4"
-        }
+        backgroundColor={`rgb(4, 188, 244, ${state.scrollY})`}
         position={"fixed"}
         width={"100%"}
         zIndex={99}
       >
         <Container
           minHeight={"3rem"}
-          maxW={"container.lg"}
+          maxW={"container.md"}
           display={"flex"}
           padding={".5rem 1rem"}
           alignItems={"center"}
@@ -67,20 +70,20 @@ const Navbar = (props: NavbarProps) => {
           <Box>
             <Text
               as={"h1"}
-              color={"white"}
-              fontWeight={"medium"}
+              color={state.scrollY > 0.2 ? "white" : "#04bcf4"}
+              fontWeight={"black"}
               textTransform={"uppercase"}
             >
-              Reilwaystation
+              RW
             </Text>
           </Box>
 
           <Box marginLeft={"auto"}>
             {isDesktop ? (
-              <Menu />
+              <Menu color={state.scrollY > 0.2 ? "white" : "black"} />
             ) : (
               <Button
-                color={"white"}
+                color={state.scrollY > 0.2 ? "white" : "black"}
                 onClick={toggleDrawer}
                 size={"sm"}
                 marginRight=".5rem"

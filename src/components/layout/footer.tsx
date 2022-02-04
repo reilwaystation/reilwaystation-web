@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <Box backgroundColor={"#1a202c"} width={"100%"} marginTop={"auto"}>
       <Container
-        maxW={"container.lg"}
+        maxW={"container.md"}
         display={"flex"}
         flexWrap={"wrap"}
         color={"white"}
