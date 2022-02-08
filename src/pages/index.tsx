@@ -1,5 +1,11 @@
-import { Box, Container, Text } from "@chakra-ui/react";
-import React from "react";
+import {
+  Box,
+  Container,
+  ListItem,
+  Text,
+  UnorderedList,
+} from "@chakra-ui/react";
+import React, { useEffect } from "react";
 import { post } from "../../data";
 import Banner from "../components/banner";
 import Expertise from "../components/expertise";
@@ -28,18 +34,8 @@ const Home = () => {
           transformation and business growth. Tencent has been listed on the
           Stock Exchange of Hong Kong since 2004.
         </Text>
-        {/* <br />
-        <Text color={"#1a202c"} fontWeight={"medium"} fontSize={"xs"}>
-          I&apos;m FCN a designer and a programmer behind this website. What we
-          do in reilwaystation is Graphic Design, Programming and Scripting
-          Technical Analysis Strategies. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Aliquid eveniet ad ipsam excepturi, unde asperiores
-          reiciendis nemo culpa voluptas repellendus quod provident qui omnis
-          consequuntur itaque. Perspiciatis odit soluta maiores.
-        </Text> */}
       </Section>
-      <Section backgroundColor={"#e8e8e8"}>
-        <Title>Our Tools and Expertise</Title>
+      <Section backgroundColor={"#1a202c"}>
         <Expertise />
       </Section>
       <Section backgroundColor={"white"}>

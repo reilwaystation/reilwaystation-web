@@ -46,6 +46,7 @@ const Navbar = (props: NavbarProps) => {
   useEffect(() => {
     window.onscroll = () => {
       calculateOpacity();
+      console.log("sdf");
     };
     window.onresize = () => {
       closeDrawer();

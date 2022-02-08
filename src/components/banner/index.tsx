@@ -6,7 +6,7 @@ const Banner = () => {
     <Box
       backgroundPosition={"center"}
       backgroundRepeat={"no-repeat"}
-      backgroundImage={"/wall2.jpg"}
+      backgroundImage={"/wall.jpg"}
       backgroundSize={"cover"}
       width={"100%"}
       backgroundColor={"gray"}
