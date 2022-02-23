@@ -1,13 +1,18 @@
 import { Button } from "@chakra-ui/react";
-import React from "react";
+import { ReactNode } from "react";
+import { Link } from "react-scroll";
+interface MenuButtonProps {
+  onClick?: () => void;
+  children?: ReactNode;
+}
 
-const MenuButton = (props: any) => (
+const MenuButton = (props: MenuButtonProps) => (
   <Button
-    color={props.color ? props.color : "white"}
+    onClick={props.onClick}
+    color={"gray.800"}
     as={"a"}
     size={"sm"}
     marginRight=".5rem"
-    width={{ base: "100%", md: "auto" }}
     fontWeight="medium"
     justifyContent="flex-start"
     backgroundColor={"transparent"}
@@ -19,12 +24,18 @@ const MenuButton = (props: any) => (
   </Button>
 );
 
-const Menu = (props: any) => {
+const Menu = (props: MenuButtonProps) => {
   return (
     <>
-      <MenuButton color={props.color}>About</MenuButton>
-      <MenuButton color={props.color}>Gallery</MenuButton>
-      <MenuButton color={props.color}>Contact</MenuButton>
+      <Link smooth={true} duration={1000} to="intro">
+        <MenuButton onClick={props.onClick}>About</MenuButton>
+      </Link>
+      <Link smooth={true} duration={1000} to="gallery">
+        <MenuButton onClick={props.onClick}>Gallery</MenuButton>
+      </Link>
+      <Link smooth={true} duration={1000} to="contact">
+        <MenuButton onClick={props.onClick}>Contact</MenuButton>
+      </Link>
     </>
   );
 };

@@ -6,8 +6,8 @@ const Section: ChakraComponent<"div", {}> = (props) => {
     <Box {...props}>
       <Container
         maxW={"container.md"}
-        paddingTop={"2rem"}
-        paddingBottom={"2rem"}
+        paddingTop={"3rem"}
+        paddingBottom={"3rem"}
       >
         {props.children}
       </Container>

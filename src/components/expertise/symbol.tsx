@@ -12,7 +12,6 @@ import Python from "./python";
 import ReactJs from "./reactjs";
 import Skill from "./skill";
 import TypeScript from "./typescript";
-import { motion } from "framer-motion";
 
 const Symbol = (props: any) => {
   switch (props.value) {
